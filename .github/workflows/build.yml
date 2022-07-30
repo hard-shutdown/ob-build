@@ -1,0 +1,10 @@
+name: Build iOS App
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: macos-latest
+    steps:
+      - run: chmod +x build.sh && ./build.sh
+      - use: mxcl/xcodebuild@v1.11
+        with:
+          platform: "iOS"

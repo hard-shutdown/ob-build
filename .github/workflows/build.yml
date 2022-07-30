@@ -4,7 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: macos-latest
     steps:
-      - run: chmod +x build.sh && ./build.sh
+      - run: ls && chmod +x build.sh && ./build.sh
       - name: Build
         uses: mxcl/xcodebuild@v1.11
         with:
